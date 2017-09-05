@@ -3,7 +3,7 @@ This repository consists of assignments that are there in the NodeSchool.io work
 
 ## Core Javascript Track 
 1. Javascripting **[Completed]** (https://www.github.com/sethvincent/javascripting)
-1. Scope Chains And Closures (https://github.com/workshopper/scope-chains-closures)
+1. Scope Chains And Closures **[Completed]** (https://github.com/workshopper/scope-chains-closures)
 1. Functional Javascript (https://github.com/timoxley/functional-javascript-workshop)
 1. Promise It Won't Hurt (https://github.com/stevekane/promise-it-wont-hurt)
 1. Count to 6 (https://github.com/domenic/count-to-6)
