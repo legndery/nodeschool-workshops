@@ -1,15 +1,18 @@
 function curryN(fn, n) {
-    let expArg = n || fn.length;
-    return function(){
-        let args = Array.prototype.slice.call(arguments);
-        if(args.length < expArg){
-            return function(){
-                this.apply(null, args);
+    n= n || fn.length;
+
+    function genCurry(prev) {
+        return function(){
+            let args = prev.concat(Array.prototype.slice.call(arguments));
+            console.log(args)
+            if (args.length < n) {
+                return genCurry(args);
+            } else {
+                return fn.apply(null, args);
             }
-        }else{
-            return fn.apply(null, args);
         }
     }
+    return genCurry([]);
 }
 
 module.exports = curryN
